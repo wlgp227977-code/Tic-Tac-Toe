@@ -35,7 +35,7 @@ while (turn < 9 && !isGameOver)
     Console.WriteLine($"{currentPlayer} 차례입니다.");
     Console.Write("놓을 위치를 입력하세요 (1~9): ");
 
-    string? inputText = Console.ReadLine();
+    string inputText = Console.ReadLine();
 
     if (!int.TryParse(inputText, out int input) || input < 1 || input > 9)
     {
